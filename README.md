@@ -190,7 +190,7 @@ Otrzymano odpowiedź serwera:
 Jeśli napotkasz problemy podczas uruchamiania, skontaktuj się z autorem projektu lub sprawdź logi kontenerów:
 ```bash
 docker logs <nazwa_kontenera>
-
+ ```
 
 ## 10. Użycie
 DAG 3_download-public_split_save.py: Pobiera dane z publicznego źródła i dzieli je na zbiory testowe i treningowe.
