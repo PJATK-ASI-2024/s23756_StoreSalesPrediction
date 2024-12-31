@@ -76,9 +76,13 @@ Zaloguj się do panelu Airflow pod adresem http://localhost:8080
 Włącz odpowiednie DAG-i w interfejsie Airflow.
 ## 10. Użycie
 DAG 3_download-public_split_save.py: Pobiera dane z publicznego źródła i dzieli je na zbiory testowe i treningowe.
+
 DAG 3_download-cloud_clean_standard-normalisate_save.py: Pobiera dane z chmury, czyści je i przetwarza.
+
 DAG 4_building_model.py: Trenuje model ML i zapisuje wyniki.
+
 DAG 5_monitoring.py: Monitoruje jakość modelu i wysyła powiadomienia e-mail w razie problemów.
+
 DAG: 6_contenerysation_and_api.py: Konteneryzuje i wdroża model.
 
 ## 11. Opis Modelu
@@ -117,5 +121,6 @@ Precision: 0.89
 Recall: 0.87
 F1-Score: 0.88
 ROC AUC: 0.93
+
 Dlaczego Gradient Boosting Classifier jest odpowiedni?
 Model GBC spełnił wymagania projektu, wykazując wysoką skuteczność klasyfikacji oraz odporność na nierównomierność danych. Dzięki wbudowanym mechanizmom ważności cech jest także bardziej interpretowalny, co ułatwia jego użycie w praktycznych zastosowaniach. Dodatkowo, możliwość dalszego dostrajania parametrów zapewnia jego elastyczność w środowiskach produkcyjnych.
