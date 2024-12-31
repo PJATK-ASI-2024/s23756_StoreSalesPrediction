@@ -90,6 +90,7 @@ Jakiego modelu użyto i dlaczego?
 W analizie i modelowaniu danych użyto narzędzia TPOT, które automatycznie rekomenduje najlepsze modele uczenia maszynowego. Po przeprowadzeniu testów na kilku modelach wybrano Gradient Boosting Classifier (GBC) jako finalny model. Decyzja o wyborze GBC była oparta na jego wysokich wynikach metryk wydajnościowych oraz zdolności do radzenia sobie z nierównomiernymi danymi.
 
 Dlaczego wybrano Gradient Boosting Classifier?
+
 Wyniki metryk:
 
 Gradient Boosting Classifier osiągnął najwyższe wyniki w porównaniu z innymi modelami:
@@ -98,10 +99,12 @@ ROC AUC: 0.91
 Po optymalizacji parametrów metryki modelu wzrosły:
 Accuracy: 0.91
 ROC AUC: 0.93
+
 Cechy modelu:
 
 GBC wykorzystuje ukierunkowane uczenie gradientowe, co sprawia, że jest skuteczny w przypadku nierównomiernych danych oraz bardziej skomplikowanych wzorców.
 Odporność na nadmierne dopasowanie dzięki iteracyjnemu uczeniu się małych modeli.
+
 Proces wyboru:
 
 Na etapie analizy TPOT wskazał również inne modele:
@@ -112,14 +115,23 @@ Parametry modelu po optymalizacji:
 Model został dostrojony za pomocą GridSearchCV, co pozwoliło na dobranie następujących parametrów:
 
 Liczba estymatorów: 100
+
 Głębokość drzewa: 5
+
 Minimalna liczba próbek w liściu: 2
+
 Współczynnik uczenia: 0.1
+
 Wyniki na zestawie testowym:
+
 Accuracy: 0.91
+
 Precision: 0.89
+
 Recall: 0.87
+
 F1-Score: 0.88
+
 ROC AUC: 0.93
 
 Dlaczego Gradient Boosting Classifier jest odpowiedni?
